@@ -1,29 +1,71 @@
 <%- include('./layouts/header') %>
 
-<h1 class="title">Role Based Access Control</h1>
-<div class="tutorial-info">
-  <ol class="tutorial-info">
-    <li><b>Express JS </b></li>
-    <li><b>EJS</b> templating engine</li>
-    <li>
-      <b>Styling — </b>custom CSS (you can use any like Bootstrap, Bulma,
-      Tailwind, etc...)
-    </li>
-    <li><b> PassportJS </b>local authentication(email, password)</li>
-    <li><b>Roles</b> (admin, moderator, client)</li>
-    <li><b>Authorization</b> (admin, moderator and user routes)</li>
-    <li><b>Mongoose</b> (ORM for MongoDB)</li>
-    <li>How to use <b>express sessions</b></li>
-    <li>
-      Using sessions to <b>persist login </b> after server reboot (using Mongo
-      Store)
-    </li>
-    <li><b>Redirect</b> to same page after login.</li>
-    <li><b>Validating</b> user input server side</li>
-    <li><b>Flash messages</b></li>
-    <li>Handling <b>HTTP error</b> (ex: 404, etc)</li>
-    <li>Somethings are always extra 😊</li>
-  </ol>
-</div>
+<style>
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
-<%- include('./layouts/footer') %>
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+ 
+
+
+  
+  .tutorial-info {
+    animation: slideIn 1s ease-out;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #333;
+    animation: slideIn 1s ease-out 0.5s;
+  }
+</style>
+
+<body>
+  
+  <div class="welcome-message">Welcome to VRV Security</div>
+
+  <h1 class="title">VRV Security</h1>
+  <div class="tutorial-info">
+    <ol class="tutorial-info">
+      <h3>What We Do</h3>
+      <li><b>AI-Dependent Services and Solutions VAPT</b></li>
+      <li><b>Cloud Infrastructure VAPT</b></li>
+      <li><b>Threat Monitoring & SOC</b></li>
+      <li><b>Company Infrastructure & Services VAPT</b></li>
+    </ol>
+  </div>
+
+  <%- include('./layouts/footer') %>
+
+  <script>
+    
+    setTimeout(() => {
+      document.querySelector('.welcome-message').style.display = 'none';
+    }, 5000);
+  </script>
+</body>
