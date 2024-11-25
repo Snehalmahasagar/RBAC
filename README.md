@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Role Based Access Control (...still in dev mode...)
 
 This is a Role Based Access Control application using Nodejs, Express, Passport Js, etc.
@@ -64,3 +65,7 @@ You can fork this repo and send me a PR.
 ## License
 
 This project is licensed under the MIT License.
+=======
+# RBAC
+Role-Based Access Control (RBAC) UI
+>>>>>>> origin/main
